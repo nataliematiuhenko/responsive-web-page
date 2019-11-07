@@ -9,14 +9,14 @@ main {
   min-width: 200px;
 }
 
-/* Positioning inside divs */
+/*==========Positioning inside divs==========*/
 
 .header-div,
-#logo-section,
-#div-three-one,
-#div-three-two,
+.logo-section,
+.div-three-one,
+.div-three-two,
 .fourth,
-#section5,
+.section5,
 nav,
 footer {
   border: 1px solid #333;
@@ -48,7 +48,7 @@ header {
 
 /* ==========LOGO-SECTION========== */
 
-#logo-section {
+.logo-section {
   padding-top: .75em;
   flex-wrap: wrap;
 }
@@ -58,17 +58,17 @@ header {
 }
 
 /* ==========SUB-LOGO-SECTION3========== */
-#sub-logo-section3 {
+.sub-logo-section3 {
   display: flex;
   flex-flow: column wrap;
 }
 
-#div-three-one {
+.div-three-one {
   height: 8em;
   background-color: #ff5733;
 }
 
-#div-three-two {
+.div-three-two {
   height: 14em;
   background-color: #c70039;
 }
@@ -93,7 +93,7 @@ header {
 
 /* ==========SECTION-5========== */
 
-#section5 {
+.section5 {
   height: 20em;
   background-color: #6285dd;
 }
@@ -137,7 +137,7 @@ footer {
 
 /* ==========LOGO SECTION========== */
 
-  #logo-section {
+  .logo-section {
     display: flex;
     flex-flow: row nowrap;
   }
@@ -148,30 +148,30 @@ footer {
 
 /* ==========SUB-LOGO SECTION3========== */
 
-  #sub-logo-section3 {
+  .sub-logo-section3 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
 
-  #div-three-one {
+  .div-three-one {
     width: 30%;
     height: 7em;
   }
 
-  #div-three-two {
+  .div-three-two {
     width: 68%;
     height: auto;
   }
 
   /* ==========CONTAINER-FOR-4-5-6========== */
-  #container-for-4-5-6 {
+  .container-for-4-5-6 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  #container-for-4-5 {
+  .container-for-4-5 {
     display: flex;
     flex-flow: column nowrap;
     width: 70%;
@@ -189,7 +189,7 @@ footer {
   /* ==========SECTION5========== */
 
 
-  #section5 {
+  .section5 {
     height: 17em;
   }
 
@@ -206,7 +206,7 @@ footer {
 
 /* ==========LOGO-SECTION========== */
 
-  #logo-section {
+  .logo-section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -228,7 +228,7 @@ footer {
 
   /* ==========SECTION-4-5-6========== */
 
-  #container-for-4-5 {
+  .container-for-4-5 {
     display: grid;
     grid-template-areas:
         "fourOne fourOne"
@@ -253,7 +253,7 @@ footer {
     grid-area: fourThree;
   }
 
-  #section5 {
+  .section5 {
     grid-area: five;
   }
 
