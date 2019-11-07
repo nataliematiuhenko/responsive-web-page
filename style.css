@@ -1,0 +1,263 @@
+
+* {
+  margin-bottom: .25em;
+  color: #000;
+  text-align: center;
+}
+
+main {
+  min-width: 200px;
+}
+
+/*==========Positioning inside divs==========*/
+
+.header-div,
+.logo-section,
+.div-three-one,
+.div-three-two,
+.fourth,
+.section5,
+nav,
+footer {
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==========HEADER==========*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-div {
+  height: 3em;
+}
+
+.hd-1 {
+  width: 67%;
+  background-color: #ffc300;
+}
+
+.hd-2 {
+  width: 30%;
+  background-color: #c2c200;
+}
+
+/* ==========LOGO-SECTION========== */
+
+.logo-section {
+  padding-top: .75em;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 90%;
+}
+
+/* ==========SUB-LOGO-SECTION3========== */
+.sub-logo-section3 {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.div-three-one {
+  height: 8em;
+  background-color: #ff5733;
+}
+
+.div-three-two {
+  height: 14em;
+  background-color: #c70039;
+}
+
+/* ==========SECTION-4========== */
+
+.fourth {
+  height: 3em;
+}
+
+.div-four-one {
+  background-color: #5ab327;
+}
+
+.div-four-two {
+  background-color: #9ff31d;
+}
+
+.div-four-three {
+  background-color: #42c473;
+}
+
+/* ==========SECTION-5========== */
+
+.section5 {
+  height: 20em;
+  background-color: #6285dd;
+}
+
+/* ==========NAVIGATION========== */
+nav {
+  margin: 0;
+  background-color: #999;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==========FOOTER========== */
+
+footer {
+  height: 3em;
+  background-color: #9f50c6;
+}
+
+/* ---------- MEDIA QUERY ---------- */
+
+@media (min-width: 360px) {
+
+  /* ==========HEADER========== */
+
+  .hd-1 {
+    width: 20%;
+  }
+
+  .hd-2 {
+    width: 78%;
+  }
+
+/* ==========LOGO SECTION========== */
+
+  .logo-section {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .logo {
+    width: 90%;
+  }
+
+/* ==========SUB-LOGO SECTION3========== */
+
+  .sub-logo-section3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .div-three-one {
+    width: 30%;
+    height: 7em;
+  }
+
+  .div-three-two {
+    width: 68%;
+    height: auto;
+  }
+
+  /* ==========CONTAINER-FOR-4-5-6========== */
+  .container-for-4-5-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container-for-4-5 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+  }
+
+/* ==========SECTION4========== */
+
+  .fourth {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 7em;
+  }
+
+  /* ==========SECTION5========== */
+
+
+  .section5 {
+    height: 17em;
+  }
+
+  /* ==========NAVIGATION========== */
+
+  nav {
+    width: 29%;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+/* ==========LOGO-SECTION========== */
+
+  .logo-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .pair-of-logos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 47%;
+  }
+
+  .logo {
+    height: 20em;
+    width: 45%;
+    object-fit: cover;
+  }
+
+  /* ==========SECTION-4-5-6========== */
+
+  .container-for-4-5 {
+    display: grid;
+    grid-template-areas:
+        "fourOne fourOne"
+        "fourTwo fourThree"
+        "five five";
+    grid-gap: .6em;
+  }
+
+  .fourth {
+    height: 12em;
+  }
+
+  .div-four-one {
+    grid-area: fourOne;
+  }
+
+  .div-four-two {
+    grid-area: fourTwo;
+  }
+
+  .div-four-three {
+    grid-area: fourThree;
+  }
+
+  .section5 {
+    grid-area: five;
+  }
+
+  nav {
+    height: auto;
+  }
+}
